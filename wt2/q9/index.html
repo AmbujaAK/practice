@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ambuja Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1> Know about your District </h1>
+		<hr>
+		<form>
+			<b>State:</b>
+			<select id="state" onchange="updateDistricts();">
+				<option value="-1">---------Select State---------</option>
+				<option value="0">West Bengal</option>
+				<option value="1">Uttar Pradesh</option>
+				<option value="2">Rajasthan</option>
+			</select> &nbsp &nbsp
+			<b>District:</b>
+			<select id="district" onchange="updateInfo();">
+				<option value="-1">--------Select District--------</option>
+			</select>
+		</form>
+		</br></br>
+		<div id="info"></div>
+		</br>
+		<p id="demo"></p>
+	</body>
+</html>

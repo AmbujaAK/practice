@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Ambuja Page</title>
+	</head>
+	<body>
+	<h1>Online Bill Payment</h1>
+
+	<form action="logout.html">
+  		<input type="radio" name="payment" onclick="hide()" value="payNow" checked> Pay Now<br>
+  		<input type="radio" name="payment" onClick="show()" value="payLater"> Pay Later<br>
+  
+  		<input style="display:none" type="date" id="paydate" <br>
+	</form>
+
+	<script>
+	function hide() {
+  		document.getElementById("paydate").style.display='none';
+	}
+
+	function show() {
+  		document.getElementById("paydate").style.display='block';
+	}
+	</script>
+	</body>
+</html>

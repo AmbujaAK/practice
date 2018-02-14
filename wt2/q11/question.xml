@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE question-paper SYSTEM "test.dtd">
+<question-paper>
+	<question no='1'>
+		<text>What is your name ?</text>
+		<optionA>ambuj</optionA>
+		<optionB>rahul</optionB>
+		<optionC>ritwick</optionC>
+		<optionD>manish</optionD>
+		<answer value='optionA'></answer>
+	</question>
+	<question no='2'>
+		<text>What is your nick name ?</text>
+		<optionA>ambuja</optionA>
+		<optionB>rahulwa</optionB>
+		<optionC>rittu</optionC>
+		<optionD>kela</optionD>
+		<answer value='optionA'></answer>
+	</question>
+</question-paper>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Add customer page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Customer Manager</a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                  Customers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="add.html">
+                  Add customers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  clear customers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+			<h1>Add Customer</h1>
+			<form role="form" onsubmit="addCustomer()">
+				<div class="form-group">
+					<label><b>Customer name</b></label>
+					<input type="text" id="name" class="form-control" placeholder="Enter name">
+				</div>
+				<div class="form-group">
+					<label><b>Customer email</b></label>
+					<input type="email" id="email" class="form-control" placeholder="Enter email address">
+				</div>
+				<div class="form-group">
+					<label><b>Customer contact</b></label>
+					<input type="text" id="contact" class="form-control" placeholder="Enter contact no">
+				</div>
+				<button type="submit" class="btn btn-primary">Add customer</button>
+			</form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

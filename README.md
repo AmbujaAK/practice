@@ -1,8 +1,9 @@
 # practice
 
 ## It includes -
-- `Animation`
-- `crypto`
-- `python-mysql`
-- `webtech`
-- `wt2`
+> - `Animation`
+> - `crypto`
+> - `python-mysql`
+> - `webtech`
+> - `wt2`
+> - `project`

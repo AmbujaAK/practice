@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ambuja Page</title>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<div>
+		
+		</div>
+		
+		<script>
+			if (!window.indexedDB) {
+				window.alert("Your browser doesn't support a stable version of IndexedDB. Such an such feature ill not be available.");
+			}
+			// Open A database  or Create a new one if not available
+			var request = window.indexedDB.open('mydatabase',1);
+			var db;
+			
+			// On ERROR
+			request.onerror = function (event) {
+				alert('There may be something wrong');
+				//alert("Database error: " + event.target.errorCode);
+			};
+			
+			// On success
+			request.onsuccess = function (event) {
+				db = event.target.result;
+			};
+			const customerData = [
+				{ sn: "1", name: "Bill", age: 35, email: "bill@company.com" },
+				{ sn: "2", name: "Donna", age: 32, email: "donna@home.org" }
+			];
+			// Creating Object Store.
+			request.onupgradeneeded = function (event) {
+				var db = event.target.result;
+				
+				//var objectStore = db.createObjectStore("name", { keyPath: "myKey" });
+			
+				var objectStore = db.createObjectStore("customers", { keyPath: "sn" });
+					  
+				objectStore.createIndex("name", "name", { unique: false });
+
+				objectStore.createIndex("email", "email", { unique: true });
+				
+				objectStore.transaction.oncomplete = function(event) {
+				
+					// Store values in the newly created objectStore.
+					var customerObjectStore = db.transaction("customers", "readwrite").objectStore("customers");
+				
+					customerData.forEach(function(customer) {
+						customerObjectStore.add(customer);
+					});
+				
+				};
+			};
+			
+			
+		</script>
+	</body>
+</html>

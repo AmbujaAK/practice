@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Ambuja Page</title>
+	</head>
+	<body>
+		<h1 style="text-align:center; color:blue"> To keep track, the number of times a page is visited. </h1>
+		<hr>
+		<div>
+			<h2>This page was loaded by you <b id='count'></b> times !</h2>
+			<button id='reset' onclick='reset_counter();'>Reset</button>
+		</div>
+		
+		<script>
+		window.onload = function load(){
+			if (localStorage) {
+				var loaded = parseInt(localStorage.getItem('loaded'), 10),
+				loaded_numb = loaded?loaded+1:1;
+				localStorage.setItem('loaded', loaded_numb);
+
+				document.getElementById('count').innerHTML = loaded_numb;
+			}
+		}
+		function reset_counter(){
+			localStorage.removeItem('loaded');
+			
+			document.getElementById('count').innerHTML = 0;
+		}
+		
+		</script>
+	</body>
+</html>
+

@@ -7,3 +7,4 @@
 > - `webtech`
 > - `wt2`
 > - `project`
+> - `python`

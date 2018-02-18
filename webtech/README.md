@@ -5,3 +5,4 @@
 - IndexedDB
 - localStorage
 - sessionStorage
+- web worker

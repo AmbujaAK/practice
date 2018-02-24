@@ -1,7 +1,7 @@
-$(document).ready(function(){
+window.onload = function load() {
 	// checking support for indexedDB 
 	if (!window.indexedDB) {
-    window.alert("Your browser doesn't support a stable version of IndexedDB. Such and such feature will not be available.");
+    alert("Your browser doesn't support a stable version of IndexedDB. Such and such feature will not be available.");
 	}
 	// open database
 	var request = indexedDB.open('customerDB',1);
@@ -19,24 +19,25 @@ $(document).ready(function(){
 	request.onupgradeneeded = function(e) {
 		var db = e.target.result;
 		
-		if(!db.objectStoreNames.contains('customers')){
-			var os = db.createObjectStore('customers', {keyPath: "id" , autoIncrement: true});
+		if(!db.objectStoreNames.contains('customers')) {
+			var os = db.createObjectStore('customers', {keyPath: 'id', autoIncrement: true});
 			
 			// Create index for name
 			os.createIndex('name','name',{unique:false});
 		}
 	}
-});
+}
 
 // add customer
-function addCustomer(){
+function addCustomer() {
 	var name = $('#name').val;
 	var email = $('#email').val;
 	var contact = $('#contact').val;
 	
+	var db;
 	var transaction = db.transaction(["customers"],"readwrite");
 	
-	// Ask for ObjectStore
+	// Ask for ObjectStore , we are going to work with.
 	var store = transaction.objectStore("customers");
 	
 	// Define customers
@@ -63,7 +64,7 @@ function addCustomer(){
 
 // Display customers
 function showCustomers(e) {
-	var transaction = db.transaction(["customers"],"readOnly");
+	var transaction = db.transaction(["customers"],"readonly");
 	
 	// Ask for ObjectStore
 	var store = transaction.objectStore("customers");

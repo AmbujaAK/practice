@@ -9,4 +9,3 @@ def index(request):
 
 def event(request):
     return render(request, 'Home/events.html')
-    #return HttpResponse("Welcome to Events page")

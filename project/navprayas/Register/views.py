@@ -1,8 +1,11 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, HttpResponse
+from django.template import loader
+# from django.http import HttpResponse
 
-def registration(request):
-    return HttpResponse("Welcome to Registration page.")
+def index(request):
+    #template = loader.get_template('Home/index.html')
+    #return HttpResponse(template.render())
+    return render(request, 'Register/index.html')
 
-def acknowledgement(request):
-    return HttpResponse("Welcome to acknowledgement page")
+def ack(request):
+    return render(request, 'Register/ack.html')

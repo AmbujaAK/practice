@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Main Page</title>
-    <!--{% load static %}-->
     <!--
-        <link rel = "stylesheet" href = "/Home/style">
+    {% load static %}
+    <link rel = "stylesheet" href ="{{ STATIC_URL }}Home/style.css" type="text/css">
     -->
     <style>
         h1 {
@@ -43,6 +43,7 @@
             color: white;
         }
     </style>
+    
 </head>
 <body>
     <nav>

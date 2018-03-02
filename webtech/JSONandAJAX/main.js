@@ -19,7 +19,11 @@ btn.addEventListener("click", function() {
 function renderHTML(data) {
   var htmlString = "";
   for (var i = 0; i < data.length; i++) {
-    htmlString = "<p> Name : " + data[i].name + "</p>";
-    subject.insertAdjacentHTML('beforeend', htmlString);
+    htmlString += "<p> Name : " + data[i].name + "</p>";
+    htmlString += "<p> Roll : " + data[i].roll + "</p>";           // = for second case.
+    document.getElementById('subject').innerHTML = htmlString;   // over-write the content
+    //subject.insertAdjacentHTML('beforeend', htmlString);      // write after and after
   }
+
+  //document.getElementById('subject').innerHTML = htmlString;
 }

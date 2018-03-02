@@ -1,17 +1,26 @@
 [
   {
-    "name" : "Ambuj",
-    "roll" : 74,
-    "age" : 21,
+    "name": "Meowsy",
+    "species" : "cat",
+    "foods": {
+      "likes": ["tuna", "catnip"],
+      "dislikes": ["ham", "zucchini"]
+    }
   },
   {
-    "name" : "Ritwick",
-    "roll" : 51,
-    "age" : 21,
+    "name": "Barky",
+    "species" : "dog",
+    "foods": {
+      "likes": ["bones", "carrots"],
+      "dislikes": ["tuna"]
+    }
   },
   {
-    "name" : "Rahul",
-    "roll" : 49,
-    "age" : 21,
-  },
+    "name": "Purrpaws",
+    "species" : "cat",
+    "foods": {
+      "likes": ["mice"],
+      "dislikes": ["cookies"]
+    }
+  }
 ]

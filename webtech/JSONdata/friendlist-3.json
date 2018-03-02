@@ -1,17 +1,26 @@
 [
   {
-    "name" : "Raja",
-    "roll" : 64,
-    "age" : 21,
+    "name": "Kitty",
+    "species" : "cat",
+    "foods": {
+      "likes": ["fresh food"],
+      "dislikes": ["stale food"]
+    }
   },
   {
-    "name" : "Raju",
-    "roll" : 11,
-    "age" : 21,
+    "name": "Pupster",
+    "species" : "dog",
+    "foods": {
+      "likes": ["tomatoes", "peas"],
+      "dislikes": ["bread"]
+    }
   },
   {
-    "name" : "Vikash",
-    "roll" : 56,
-    "age" : 21,
-  },
+    "name": "Tux",
+    "species" : "cat",
+    "foods": {
+      "likes": ["fancy dishes"],
+      "dislikes": ["basic cat food"]
+    }
+  }
 ]

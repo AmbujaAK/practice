@@ -1,0 +1,17 @@
+[
+  {
+    "name" : "Raja",
+    "roll" : 64,
+    "age" : 21,
+  },
+  {
+    "name" : "Raju",
+    "roll" : 11,
+    "age" : 21,
+  },
+  {
+    "name" : "Vikash",
+    "roll" : 56,
+    "age" : 21,
+  },
+]

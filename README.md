@@ -1,10 +1,13 @@
 # practice
 
 ## It includes -
-> - `Animation`
-> - `crypto`
-> - `python-mysql`
-> - `webtech`
-> - `wt2`
-> - `project`
-> - `python`
+- **Artificial Intelligence**
+- **Algorithm**
+- **Animation**
+- **Cryptography**
+- **Data Structure**
+- **Project**
+- **Python**
+- **Python-MySql**
+- **Web Technology**
+- **Web Technology-II (lab)**

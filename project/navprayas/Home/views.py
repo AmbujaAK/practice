@@ -3,7 +3,9 @@ from django.template import loader
 # from django.http import HttpResponse
 
 def index(request):
-    return render(request, 'Home/index.html')
+    headName = 'NAVPRAYAS'
+    args = {'headName' : headName}
+    return render(request, 'Home/index.html',args)
 
 def event(request):
     return render(request, 'Home/event.html')

@@ -4,11 +4,19 @@ import java.io.IOException;
 
 public class storeMatrixFromFile {
   public static void main(String[] args) {
-    int size = 5;
-    int a[][] = new int[size][size];
+    //int size = 6;
+    //int a[][] = new int[size][size];
     try {
-      Scanner sc = new Scanner(new File("textFile/matrix.txt"));
-
+      //Scanner sc = new Scanner(new File("textFile/matrix.txt"));
+      // To choose the matrix
+      System.out.println("Enter the matrix size : ");
+      Scanner sSize = new Scanner(System.in);
+      int size = sSize.nextInt();
+      int a[][] = new int[size][size];
+      
+      File f = new File("textFile/matrix" + size + ".txt");
+      Scanner sc = new Scanner(f);
+      // To read the matrix from the file .
       while( sc.hasNextLine()) {
         System.out.println("Matrix is :");
         for (int i=0; i<size; i++) {

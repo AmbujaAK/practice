@@ -47,13 +47,13 @@ public class BFS {
         int non, source;
         Scanner scanner = null;
 
-        System.out.println("Enter the number of nodes in the graph");
+        System.out.println("\nEnter the number of nodes (3,4,5,6) in the graph : ");
         scanner = new Scanner(System.in);
         non = scanner.nextInt();
         int a[][] = new int[non + 1][non + 1];
         try {
           // To choose the matrix
-          System.out.println("Enter the matrix number : ");
+          System.out.println("\nEnter the matrix number(same as above) : ");
           Scanner sCount = new Scanner(System.in);
           int count = sCount.nextInt();
           File f = new File("matrix" + count + ".txt");
@@ -61,7 +61,7 @@ public class BFS {
           // To read the matrix from the file .
           Scanner sc = new Scanner(f);
           while( sc.hasNextLine()) {
-            System.out.println("Matrix is :");
+            System.out.println("Matrix is : ");
             for (int i=1; i<=non; i++) {
               for (int j=1; j<=non; j++) {
                 a[i][j] = sc.nextInt();

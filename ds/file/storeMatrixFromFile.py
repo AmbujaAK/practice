@@ -1,10 +1,10 @@
-def main() :
+def readMatrix() :
     file = open('textFile/matrix.txt')
     matrix = []
     for line in file :
-        m2 = str(matrix.append(line))
-        #print(matrix)
-    print(matrix)
+        matrix.append(line)
+    for item in matrix :
+        print(item,end='')
 
 if __name__ == '__main__':
-    main()
+    readMatrix()

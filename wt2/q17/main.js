@@ -1,7 +1,7 @@
 function start(name) {
   if (window.WebSocket) {
 	  //alert('ws://' + window.location.host + '/ambuj/q17/' + name);
-    socket = new WebSocket('ws://' + window.location.host + '/ambuj/chat/' + name);
+    socket = new WebSocket('ws://' + window.location.host + '/git/chat/' + name);
 	
   } else {
     show('Error: Your browser does not support WebSocket.');

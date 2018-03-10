@@ -1,7 +1,9 @@
 div {
   text-align: center;
-  color: blue;
 }
-hr {
+.form {
+	color : black;
+}
+span {
   color: black;
 }

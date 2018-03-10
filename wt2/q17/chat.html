@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>web socket</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="main.js"></script>
+	<script src="main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -15,8 +15,8 @@
       <h1>Web socket</h1><hr>
       <div class="row">
         <div class="col-sm-6">JOIN here<hr>
-          <form>
-            <input type="text" value="ambuj" id="name"/><br><br>
+          <form class="form">
+            <input type="text" id="name" value="ambuj"/><br><br>
             <input type="button" onclick="start(document.getElementById('name').value)" value="Start"/><br><br>
             <input type="text" placeholder="type and press enter to chat" id="chat" /><br>
           </form>

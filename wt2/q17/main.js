@@ -1,11 +1,14 @@
 function start(name) {
   if (window.WebSocket) {
-    socket = new WebSocket('ws://' + window.location.host + '/q17/' + name);
+	  //alert('ws://' + window.location.host + '/ambuj/q17/' + name);
+    socket = new WebSocket('ws://' + window.location.host + '/ambuj/chat/' + name);
+	
   } else {
     show('Error: Your browser does not support WebSocket.');
     return;
   }
   socket.onopen = function () {
+	//alert('a');
     show('WebSocket connection opened.');
     ele = document.getElementById('chat');
     ele.onkeydown = function(event) {

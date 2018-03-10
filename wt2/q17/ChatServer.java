@@ -4,7 +4,7 @@ import javax.websocket.server.ServerEndpoint;
 import javax.websocket.server.PathParam;
 import java.util.*;
 
-@ServerEndpoint(value = "/q17/{name}")
+@ServerEndpoint(value = "/chat/{name}")
 public class ChatServer {
   static final List<ChatServer> handlers = new ArrayList<>();
   private String name;

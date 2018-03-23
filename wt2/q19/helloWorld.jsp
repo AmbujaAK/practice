@@ -5,10 +5,12 @@
 	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	   <title>First JSP</title>
 	</head>
-   
+
 	<body>
 		<div>
-			<h1><% hello,world %></h1>
+			<h1><%
+			out.print("Hello,world");
+			%></h1>
 		</div>
 	</body>
 </html>

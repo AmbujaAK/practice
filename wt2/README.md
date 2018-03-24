@@ -4,4 +4,4 @@
 
 - [Slides](https://drive.google.com/open?id=1xlb4w_9GbXHB0uWFj685omkHhmBSy7Cw)
 
-- [WEB-INFO](#web-info)
+- [WEB-INF](https://github.com/AmbujaAK/practice/tree/master/web-inf)

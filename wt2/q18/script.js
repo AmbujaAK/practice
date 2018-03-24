@@ -10,40 +10,41 @@ function display() {
     ["Manisha Mandal","43","IT"],
     ["Deepa Kumari","80","IT"],
     ["Choden Lama","67","IT"],
+    ["Manish Kumar","71","IT"],
     ["Ritem Bera","21","INSTRUMENTATION"],
     ["Shrishty Kumari","22","PRINTING"],
     ["Priyanka Nag","23","PRINTING"],
     ["Aman Aggrawal","4","CONSTRUCTION"],
     ["Priya Kumari","25","POWER"],
     ["Prasant Rajput","26","POWER"],
-    ["Pratysh","28","CONSTRUCTION"],
+    ["Pratyush","28","CONSTRUCTION"],
     ["Saurav","33","INSTRUMENTATION"],
   ];
   //var size = 7;
   //console.log(size);
-  s_list = [];
-  res += '<ul>';
+  //s_list = [];
+  res += '<div>';
   //var flag;
   for (var i=0;i<students.length;i++){
     if(roll == students[i][1]){
       //flag = 1;
-      res += '<li> <h6> Name :'+ students[i][0] + '<h6></li>';
-      res += '<li> <h6> Roll No. :'+ students[i][1] + '<h6></li>';
-      res += '<li> <h6> Department :'+ students[i][2] + '<h6></li>';
+      res += '<p> Name :'+ students[i][0] + '</p>';
+      res += '<p> Roll No. :'+ students[i][1] + '</p>';
+      res += '<p> Department :'+ students[i][2] + '</p>';
     }
     else if (dept.options[dept.selectedIndex].text == students[i][2]) {
-      console.log(dept.options[dept.selectedIndex].tex);
+      //console.log(dept.options[dept.selectedIndex].tex);
       //flag = 1;
-      res += '<li> <h6> Name :'+ students[i][0] + '<h6></li>';
-      res += '<li> <h6> Roll No. :'+ students[i][1] + '<h6></li>';
-      res += '<li> <h6> Department :'+ students[i][2] + '<h6></li>';
+      res += '<p> Name :'+ students[i][0] + '</p>';
+      res += '<p> Roll No. :'+ students[i][1] + '</p>';
+      res += '<p> Department :'+ students[i][2] + '</p>';
     }
       document.getElementById('content').innerHTML = res;
     //s_list.push(res);
     //s_list.push(students[i]);
   }
-  res+='</ul>';
-  console.log(s_list);
+  res+='</div>';
+  //console.log(s_list);
 /*
   for (var i=0;i<students.length;i++){
     if(roll == students[i][1]){

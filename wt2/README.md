@@ -6,7 +6,7 @@
 
 - [WEB-INF](https://github.com/AmbujaAK/practice/tree/master/web-inf)
 
-## Questions done
+# Progress Table
 | Ques. No.  | Progress | Ques. No.  | Progress |
 | ------------- | ------------- | ------------- | ------------- |
 | 1  | **done**  | 21  |   |

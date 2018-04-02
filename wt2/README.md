@@ -7,7 +7,7 @@
 - [WEB-INF](https://github.com/AmbujaAK/practice/tree/master/web-inf)
 
 ## Questions done
-| First Header  | Second Header | Third Header  | Fourth Header |
+| Ques. No.  | Progress | Ques. No.  | Progress |
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| 1  | Content Cell  | 21  | Content Cell  |
+| 2  | Content Cell  | 22  | Content Cell  |

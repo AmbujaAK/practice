@@ -1,6 +1,6 @@
 # Artificial Intelligence Solution
 
-# Progress Table
+## Progress Table
 | Assgn. No.  | Progress |
 | ----------- | ----------- |
 | 1  | **done**  |
@@ -10,6 +10,8 @@
 | 5  | **done**  |
 | 6  | **done**  |
 | 7  | **done**  |
-| 8  |   |
-| 9  |   |
-| 10  |   |
+| 8  | **done**  |
+| 9  | **done**  |
+| 10  | **done**  |
+| 11  |   |
+| 12  |   |

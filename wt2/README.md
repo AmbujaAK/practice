@@ -9,5 +9,23 @@
 ## Questions done
 | Ques. No.  | Progress | Ques. No.  | Progress |
 | ------------- | ------------- | ------------- | ------------- |
-| 1  | Content Cell  | 21  | Content Cell  |
-| 2  | Content Cell  | 22  | Content Cell  |
+| 1  | *done*  | 21  |   |
+| 2  | *done*  | 22  |   |
+| 3  | *done*  | 23  |   |
+| 4  | *done*  | 24  |   |
+| 5  | *done*  | 25  |   |
+| 6  | *done*  | 26  |   |
+| 7  | *done*  | 27  |   |
+| 8  | *done*  | 28  |   |
+| 9  | *done*  | 29  |   |
+| 10  | *done*  | 30  |   |
+| 11  | *done*  | 31  |   |
+| 12  | *done*  | 32  |   |
+| 13  | *done*  | 33  |   |
+| 14  | *done*  | 34  |   |
+| 15  | *done*  | 35  |   |
+| 16  | *done*  | 36  |   |
+| 17  | *done*  | 37  |   |
+| 18  |   | 38  |   |
+| 19  | *done*  | 39  |   |
+| 20  |   | 40  |   |

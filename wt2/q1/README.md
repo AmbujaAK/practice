@@ -17,4 +17,4 @@
 	2. you will see **server** file , edit this file in any editor (say **notepad++**)
 	3. In *connector* tag , change the port , you want.
 	4. Restart the web server.
-	5. open the *first.html* file with new port.
+	5. open the *index.html* file with new port.

@@ -10,8 +10,8 @@
 | Ques. No.  | Progress | Ques. No.  | Progress |
 | ------------- | ------------- | ------------- | ------------- |
 | 1  | **done**  | 21  |   |
-| 2  | **done**  | 22  | *in progress*  |
-| 3  | **done**  | 23  |   |
+| 2  | **NOT done**  | 22  | *in progress*  |
+| 3  | **NOT done**  | 23  |   |
 | 4  | **done**  | 24  |   |
 | 5  | **done**  | 25  |   |
 | 6  | **done**  | 26  |   |

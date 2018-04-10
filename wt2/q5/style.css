@@ -1,9 +1,0 @@
-.invalid {
-    color: red;
-}
-
-.invalid:before {
-    position: relative;
-    left: -35px;
-    content: "&#10006;";
-}

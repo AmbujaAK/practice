@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Ambuja Page</title>
+<script type="text/javascript">
+    function idleTimer() {
+    var t;
+    window.onload = resetTimer;
+    window.onmousemove = resetTimer;
+    window.onmousedown = resetTimer;
+    window.onclick = resetTimer;
+    window.onscroll = resetTimer;
+    window.onkeypress = resetTimer;
+
+    function logout() {
+        window.location.href = 'logout.html';
+    }
+
+   function resetTimer() {
+        clearTimeout(t);
+        t = setTimeout(logout, 10000);
+    }
+}
+idleTimer();
+</script>
+</head>
+<body>
+  <div style="color:blue">
+    <center >Ambuj Kumar</center>
+    <center >74</center>
+    <center >Web Technology</center><hr>
+  </div>
+  <h1>Home page<h1>
+
+</body>
+</html>

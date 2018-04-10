@@ -1,25 +1,21 @@
 <html>
 	<head>
 		<title>Ambuja Page</title>
+		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
+		<div style="color:blue">
+			<center >Ambuj Kumar</center>
+			<center >74</center>
+			<center >Web Technology</center><hr>
+		</div>
 	<h1>Online Bill Payment</h1>
 
-	<form action="logout.html">
+	<form>
   		<input type="radio" name="payment" onclick="hide()" value="payNow" checked> Pay Now<br>
   		<input type="radio" name="payment" onClick="show()" value="payLater"> Pay Later<br>
-  
+
   		<input style="display:none" type="date" id="paydate" <br>
 	</form>
-
-	<script>
-	function hide() {
-  		document.getElementById("paydate").style.display='none';
-	}
-
-	function show() {
-  		document.getElementById("paydate").style.display='block';
-	}
-	</script>
 	</body>
 </html>

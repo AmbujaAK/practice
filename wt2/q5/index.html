@@ -2,33 +2,27 @@
 <html>
 	<head>
 		<title>Ambuja Page</title>
-		<script src="script.js"></script>
+		<script src="main.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div class="container">
-    			<form>
-				<label for="loginID"><b>Login</b></label>
-    				<input type="text" placeholder="Enter login ID" id="loginID" name="loginID" 
-				title="A login name can only have alphanumeric characters and underscore. Number of characters must not exceed 10" required>
-    				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" id="psw" name="psw" 
-				pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}" 
-				title="A password must have 6 to 10 characters containing at least one digit and one uppercase letter." required>
-			</form>
-			<br>
-			<form>
-				<input type="submit" value="Login">
-    			</form>
+		<div style="color:blue">
+			<center >Ambuj Kumar</center>
+			<center >74</center>
+			<center >Web Technology</center><hr>
 		</div>
-<!--
-<div id="message">
-  <h3>Password must contain the following:</h3>
-  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-  <p id="number" class="invalid">A <b>number</b></p>
-  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-</div>
--->
+		<div>
+    	<form id="login_form">
+				<label for="login"><b>Login</b></label>
+    			<input type="text" placeholder="Enter login ID" id="login" name="login"
+							title="A login name can only have alphanumeric characters and underscore. Number of characters must not exceed 10" required>
+    		<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" id="psw" name="psw"
+							pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}"
+							title="A password must have 6 to 10 characters containing at least one digit and one uppercase letter." required>
+				<input type="button" value="submit" onclick="check()"/>
+			</form>
+			<div id="error" style="color:red"></div>
+		</div>
 	</body>
 </html>

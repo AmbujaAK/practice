@@ -3,17 +3,22 @@
 	<head>
 		<title>Ambuja Page</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="script.js"></script>
+		<script src="main.js"></script>
 	</head>
 	<body onload="display()">
-		<h1> Semester-Wise Subjects </h1>
+		<div style="color:blue">
+			<center >Ambuj Kumar</center>
+			<center >74</center>
+			<center >Web Technology</center><hr>
+		</div>
+		<h1> Semester-wise Subjects </h1>
 		<div>
 			<b>Year:</b>
 			<select id="Year" onchange="display()">
-			<option value="0">1st</option>
-			<option value="1">2nd</option>
-			<option value="2">3rd</option>
-			<option value="3">4th</option>
+				<option value="0">1st</option>
+				<option value="1">2nd</option>
+				<option value="2">3rd</option>
+				<option value="3">4th</option>
 			</select> &nbsp &nbsp
 			<b>Semester:</b>
 			<select id="Semester" onchange="display()">
@@ -21,7 +26,6 @@
 				<option value="1">2nd</option>
 			</select>
 			</br></br>
-			</br>
 		</div>
 		<p id="demo"></p>
 	</body>

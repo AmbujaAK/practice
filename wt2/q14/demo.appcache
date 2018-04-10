@@ -11,5 +11,5 @@ style.css
 # offline.html will be displayed if the user is offline
 FALLBACK:
 
-# All other resources (e.g. sites) require the user to be online. 
+# All other resources (e.g. sites) require the user to be online.
 NETWORK:

@@ -62,21 +62,5 @@
         getServletContext().getRequestDispatcher("/index.jsp").include(request, response);
       }
       %>
-    <!--
-    <h1>Hello , Ambuja !!</h1>
-    <hr>
-    <h2>Login </h2>
-    <div class="card">
-      <form>
-        Email ID :
-        <input type="email" id="email" placeholder="Enter email ID"/><br><br>
-        Password :
-        <input type="password" id="password" placeholder="Enter password"/><br><br>
-      </form>
-      <form>
-        <input type="button" id="button" value="Login"/>
-      </form>
-    </div>
-  -->
   </body>
 </html>

@@ -6,5 +6,6 @@
 <body>
 <% session.invalidate(); %>
 <p>You have been successfully logout</p>
+<% response.sendRedirect("index.html");%>
 </body>
 </html>

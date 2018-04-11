@@ -9,12 +9,12 @@
 # Progress Table
 | Ques. No.  | Progress | Ques. No.  | Progress |
 | ------------- | ------------- | ------------- | ------------- |
-| 1  | **done**  | 21  |   |
+| 1  | **done**  | 21  | **done**  |
 | 2  | **NOT done**  | 22  | *in progress*  |
-| 3  | **NOT done**  | 23  |   |
+| 3  | **NOT done**  | 23  | *in progress*  |
 | 4  | **done**  | 24  |   |
 | 5  | **done**  | 25  |   |
-| 6  | **done**  | 26  |   |
+| 6  | **done**  | 26  | *in progress*  |
 | 7  | **done**  | 27  |   |
 | 8  | **done**  | 28  |   |
 | 9  | **done**  | 29  |   |
@@ -28,4 +28,4 @@
 | 17  | **done**  | 37  |   |
 | 18  | *in Progress* | 38  |   |
 | 19  | **done**  | 39  |   |
-| 20  |   | 40  |   |
+| 20  | **done**  | 40  |   |

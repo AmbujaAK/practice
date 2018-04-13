@@ -8,8 +8,11 @@
       <script src="main.js"></script>
   </head>
   <body>
-    <h1>Hello , Ambuja !!</h1>
-    <hr>
+    <div style="color:blue">
+			<center >Ambuj Kumar</center>
+			<center >74</center>
+			<center >Web Technology</center><hr>
+		</div>
     <div>
       <b>State :</b>
       <select id="state" name="state" onchange="show_district(this.value)">
@@ -46,6 +49,8 @@
         <option value='0'>---Select any District---</option>
       </select>
     </div>
-    <p id='content'></p>
+    <div id="abc">
+      <p id='content'></p>
+    </div>
   </body>
 </html>

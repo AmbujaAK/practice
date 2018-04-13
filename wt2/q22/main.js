@@ -1,14 +1,17 @@
 var xmlhttp;
 function show_district(str){
-
-  if (typeof XMLHttpRequest !== "undefined") {
-    xmlhttp = new XMLHttpRequest();
-  } else if (window.ActiveXObject) {
-    xmlhttp = new XMLHttpRequest("Microsoft.XMLHTTP");
-  }
-  if (xmlhttp === null) {
-    alert("Browser does not support XMLHttpRequest");
-    return false;
+  try {
+    xmlHttp = new XMLHttpRequest();
+  }catch(e1) {
+    try {
+      xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }catch(e2) {
+      try {
+        xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+      }catch(e3) {
+        alert("Your browser does not support AJAX");
+      }
+    }
   }
 
   var url = "district.jsp";
@@ -26,14 +29,18 @@ function change_district() {
 }
 
 function show_info(str) {
-  if (typeof XMLHttpRequest !== "undefined") {
-    xmlhttp = new XMLHttpRequest();
-  } else if (window.ActiveXObject) {
-    xmlhttp = new XMLHttpRequest("Microsoft.XMLHTTP");
-  }
-  if (xmlhttp === null) {
-    alert("Browser does not support XMLHttpRequest");
-    return false;
+  try {
+    xmlHttp = new XMLHttpRequest();
+  }catch(e1) {
+    try {
+      xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }catch(e2) {
+      try {
+        xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+      }catch(e3) {
+        alert("Your browser does not support AJAX");
+      }
+    }
   }
 
   var url = "info.jsp";

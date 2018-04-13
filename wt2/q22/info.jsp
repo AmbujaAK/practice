@@ -8,8 +8,7 @@
   <body>
 <%
   String districtCount = request.getParameter("count");
-  //String buffer = "<p id='content'>";
-  //buffer += "<p>";
+  String buffer = "";
   Connection con = null;
   Statement stmt = null;
   ResultSet rs = null;
@@ -24,22 +23,23 @@
     Class.forName(driver);
     con = DriverManager.getConnection(connectionUrl + database, id, pwd);
     stmt = con.createStatement();
-    String sql = "SELECT info FROM district_info WHERE info_id='1'";
-    //String sql = "SELECT info FROM district_info WHERE info_id='" + districtCount + "'";
-    rs = stmt.executeQuery(sql);
-    //While(rs.next()){
-    String buffer = rs.getString("info");
-    //buffer += "</p>";
-    //}
-    response.getWriter().println(buffer);
-   /*
-    String sql = "SELECT * FROM district_info WHERE info_id='" + districtCount + "'";
+    //String sql = "SELECT info FROM district_info WHERE info_id='1'";
+    //String sql = "SELECT * FROM district_info WHERE info_id='" + districtCount + "'";
+    String sql = "SELECT * FROM district_info";
     rs = stmt.executeQuery(sql);
 
-    String buffer = rs.getString("info");
-    //buffer += "</p>";
-    response.getWriter().println(buffer);
-    */
+    int c = 1;
+    while(rs.next()){
+      //String disID = request.getParameter("count");
+      if (districtCount.equals(c)) {
+        buffer = rs.getString("info");
+        break;
+      } else{
+        c++;
+      }
+    }
+     response.getWriter().println(buffer);
+
   } catch (Exception e) {
     e.printStackTrace();
   }

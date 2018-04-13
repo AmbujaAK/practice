@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Open Account</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <script lang="Javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div style="color:blue">
+      <center >Ambuj Kumar</center>
+      <center >74</center>
+      <center >Web Technology</center><hr>
+    </div>
+    <div>
+    <form name="account" method="POST" action="insertData.jsp">
+		<h1>Creat your account</h1>
+      <label for="username"><b>Username :</b></label>
+      <input type="text" name="username" onblur="check(username.value,email.value,phone.value)"  /><br><br>
+			<label for="fullname"><b>Full Name :</b></label>
+      <input type="text" name="fullname"  /><br><br>
+			<label for="email"><b>Email :</b></label>
+      <input type="text" name="email" onblur="check(username.value,email.value,phone.value)"/><br><br>
+			<label for="phone"><b>Mobile No. :</b></label>
+      <input type="tel" name="phone" onblur="check(username.value,email.value,phone.value)"/><br><br>
+			<label for="password"><b>Password :</b></label>
+      <input type="password" name="password" onblur="check2(password.value,confirm_password.value)"/><br><br>
+			<label for="confirm_password"><b>Confirm Password :</b></label>
+      <input type="password" name="confirm_password" onblur="check2(password.value,confirm_password.value)"/><br><br>
+      <input type="submit" value="Login" id="loginButton" disabled="true" /><br/><br/>
+		  <label id="error"></label>
+    </form>
+  </div>
+  </body>
+</html>

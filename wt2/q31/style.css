@@ -1,0 +1,9 @@
+form {
+  position:absolute;
+  top: 15%;
+  left: 40%;
+  padding: 20px;
+}
+input {
+  width:90%;
+}

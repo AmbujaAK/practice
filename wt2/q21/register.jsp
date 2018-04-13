@@ -33,10 +33,10 @@
       int i = stmt.executeUpdate(sql);
       out.println("You are registered");
 
-    } catch(SQLException sqe) {
+    }catch(SQLException sqe){
       out.println("username or email is already registered");
-      }
     }
+    
     %>
   </body>
 </html>

@@ -26,7 +26,7 @@
   <description>
      Welcome to Tomcat
   </description>
-
+	
   <servlet>
 	<servlet-name>helloWorld</servlet-name>
 	<servlet-class>helloWorldServlet</servlet-class>
@@ -36,5 +36,98 @@
 	<servlet-name>helloWorld</servlet-name>
 	<url-pattern>/helloWorld</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>student</servlet-name>
+	<servlet-class>studentData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>student</servlet-name>
+	<url-pattern>/studentData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>personQuery</servlet-name>
+	<servlet-class>PersonQueryServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>personQuery</servlet-name>
+	<url-pattern>/PersonQueryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>LoginInfoName</servlet-name>
+	<servlet-class>LoginInfo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>LoginInfoName</servlet-name>
+	<url-pattern>/LoginInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>WelcomeServlet</servlet-name>
+	<servlet-class>WelcomeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>WelcomeServlet</servlet-name>
+	<url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>jobForm</servlet-name>
+	<servlet-class>jobForm</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>jobForm</servlet-name>
+	<url-pattern>/jobForm</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+ <servlet>
+    <servlet-name>Validate</servlet-name>
+    <servlet-class>Validate</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Validate</servlet-name>
+    <url-pattern>/Validate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+	<welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+	<servlet-name>asd</servlet-name>
+	<servlet-class>GetDetails</servlet-class>
+	</servlet>
 
-</web-app>
+  <servlet-mapping>
+	<servlet-name>asd</servlet-name>
+	<url-pattern>/GetDetails</url-pattern>
+</servlet-mapping>
+  
+  </web-app>

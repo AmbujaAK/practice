@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX Page</title>
+    <style >
+      h1,div{
+        color: blue;
+        text-align: center;
+      }
+      #container {
+        text-align: center;
+      }
+    </style>
+    <script src="main.js"></script>
+  </head>
+  <body onload="process()">
+    <h1>Hello, Ambuja</h1><hr>
+    <!--
+    <div id="container">
+      <input type="text" id="text" /><br><br>
+      <input type="button" id="btn" onclick="display()" value="Search"/>
+      <br>
+      <div id="content"></div>
+    </div>
+    <form action="PersonQueryServlet" method=get>
+    -->
+    Search for:
+    <select name="persontype">
+    <option value="student" selected>Student </option>
+    <option value="instructor"> Instructor </option>
+    </select> <br>
+    Name: <input type=text size=20 name="name">
+    <input type=submit value="submit">
+    </form>
+
+  </body>
+</html>

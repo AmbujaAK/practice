@@ -2,12 +2,13 @@
 using namespace std;
 
 class sample{
-	int x;
-	void read();
-	void write();
+	private:
+		int x;
+		void read();
+		void write();
 	public:
-	void update();
-	void show();
+		void update();
+		void show();
 };
 void sample:: write(){
 	string s;
@@ -15,18 +16,19 @@ void sample:: write(){
 	cin>>s;
 }
 void sample:: show(){
-	write();
+	read();
 }
 void sample:: read(){
 	cout<<"\nNow you can read me.";
 }
 void sample:: update(){
-	read();
+	write();
 }
 
 int main(){
 	sample s;
 	s.update();
-	s.show();	
+	s.show();
+
 	return 0;
 }

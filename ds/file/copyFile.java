@@ -7,8 +7,8 @@ class copyFile {
     FileOutputStream out = null;
 
     try {
-      in = new FileInputStream("fileStore/input.txt");
-      out = new FileOutputStream("fileStore/output.txt");
+      in = new FileInputStream("textFile/input.txt");
+      out = new FileOutputStream("textFile/output.txt");
 
       int c;
       // copying file from input to output.

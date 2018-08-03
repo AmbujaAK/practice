@@ -18,6 +18,7 @@ vector<int> convert_into_binary(int num){
   return v;
 }
 
+// replace in vector .
 vector<int> findComplement(vector<int> v) {
   replace(v.begin(),v.end(),0,2);
   replace(v.begin(),v.end(),1,0);

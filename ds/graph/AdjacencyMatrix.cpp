@@ -23,8 +23,11 @@ class AdjacencyMatrix{
         void addEdge(int from,int to){
             if(from > n || to > n || from < 0 || to < 0)
                 cout<<"\nInvalide Edge ";
-            else   
-                adj[from-1][to-1] = 1;
+            else{
+                //cout<<from<<" "<<to<<endl;
+                adj[from][to] = 1;
+                adj[to][from] = 1;
+            }
         }
 
         void printG(){
@@ -39,7 +42,7 @@ class AdjacencyMatrix{
 
 int main(){
     int nodes;
-    cout<<"\nEnter the number of nodes : ";
+    //cout<<"\nEnter the number of nodes : ";
     cin>>nodes;
     
     AdjacencyMatrix adj(nodes);
@@ -52,7 +55,7 @@ int main(){
             break;
         adj.addEdge(from,to);
     }
-    cout<<"This is the matrix of the given graph "<<endl;
+    //cout<<"This is the matrix of the given graph "<<endl;
     adj.printG();
     return 0 ;
 }

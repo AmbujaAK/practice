@@ -10,6 +10,14 @@ node* head = NULL;
 node* insert(){
 	
 }
+
+void del(){
+
+}
+
+void display(){
+
+}
 int main(){
 	cout<<"\n*****LINKED LIST*****";
 	cout<<"\n1 : Insert";
@@ -22,7 +30,7 @@ int main(){
 	switch(ch){
 		case 1 : insert();
 			 break;
-		case 2 : delete();
+		case 2 : del();
 			 break;
 		case 3 : display();
 			 break;

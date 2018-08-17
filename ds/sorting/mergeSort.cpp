@@ -1,73 +1,75 @@
 #include<iostream>
 using namespace std;
 
-void merge(int *arr, int l, int m, int r ){
+void merge(int arr[], int start, int mid, int end ) {
 	int i,j,k;
-	int n1 = m-l-1;
-	int n2 = r-m;
+	int n1 = mid-start + 1;
+	int n2 = end-mid;
 	
-	//creating two temp array.
-	int arr_1[n1],arr_2[n2];
+	int leftArray[n1];
+	int rightArray[n2];
 	
-	//copying data to temp array.
 	for (i = 0; i < n1; i++)
-        arr_1[i] = arr[l + i];
+        leftArray[i] = arr[start+i];
     
 	for (j = 0; j < n2; j++)
-        arr_2[j] = arr[m + 1+ j];
+        rightArray[j] = arr[mid+1+j];
 	
-	i=0;
-	j=0;
-	k=l;
-	
+	i=0,j=0,k=start;
+
 	while(i<n1 && j<n2){
-		if (arr_1[i] <= arr_2[j])
-        {
-            arr[k] = arr_1[i];
+		if (leftArray[i] <= rightArray[j]) {
+            arr[k] = leftArray[i];
             i++;
         }
-        else
-        {
-            arr[k] = arr_2[j];
+        else {
+            arr[k] = rightArray[j];
             j++;
         }
         k++;
 	}
 	
 	while(i < n1){
-		arr[k] = arr_1[i];
+		arr[k] = leftArray[i];
         i++;
         k++;
 	}
 	while(j < n2){
-		arr[k] = arr_2[j];
+		arr[k] = rightArray[j];
         j++;
         k++;
 	}
 }
 
-void sort(int *arr, int l, int r){
-	if (l < r){
-        	int m = l+(r-l)/2;
- 
-	        sort(arr, l, m);
-        	sort(arr, m+1, r);
- 
-       		merge(arr, l, m, r);
-    	}
+void mergeSort(int arr[], int start, int end){
+	if (start < end){
+		int mid = (start + end)/2;
+
+		mergeSort(arr, start, mid);
+		mergeSort(arr, mid+1, end);
+		merge(arr, start, mid, end);
+    }
+}
+
+void display(int arr[], int n){
+	for (int i=0; i<n; i++)
+		cout<< arr[i] << " ";
+	cout<<endl;
 }
 
 int main(){
-	int n,arr[100];
-	cout<<"\nEnter the size of array : ";
-	cin>>n;
-	cout<<"\nEnter the elements of array : ";
-	for(int i=0; i<n; i++)
-		cin>>arr[i];
-
-	sort(arr,0,n-1);
-	
-	cout<<"\nSorted Array using Merge Sort is : ";
-	for(int i=0; i<n; i++)
-		cout<<arr[i]<<" ";
+	int t;
+	cin>>t;
+	for(int z=1; z<=t; z++){
+		int n;
+		cin>>n;
+		int arr[n];
+		for (int i=0; i<n; i++)
+			cin>>arr[i];
+		mergeSort(arr,0,n-1);
+		
+		cout<<"case #"<<z<<" ";
+		display(arr,n);
+	}
+	return 0;
 }

@@ -8,7 +8,7 @@ void swap(int *i, int *j){
 	*j = temp;
 }
 
-void sort(int *a, int n){
+void selectionSort(int *a, int n){
 	for(int i=0; i<n-1; i++){
 		int min = i;
 		for(int j=i+1; j<n; j++){
@@ -18,17 +18,26 @@ void sort(int *a, int n){
 		swap(&a[min],&a[i]);
 	}
 }
+
+void display(int arr[], int n){
+	for (int i=0; i<n; i++)
+		cout<< arr[i] << " ";
+	cout<<endl;
+}
+
 int main(){
-	int n,arr[100];
-	cout<<"\nEnter the size of array : ";
-	cin>>n;
-	cout<<"\nEnter the elements of array : ";
-	for (int i=0; i<n; i++){
-		cin>>arr[i];
+	int t;
+	cin>>t;
+	for(int z=1; z<=t; z++){
+		int n;
+		cin>>n;
+		int arr[n];
+		for (int i=0; i<n; i++)
+			cin>>arr[i];
+		selectionSort(arr,n);
+		
+		cout<<"case #"<<z<<" ";
+		display(arr,n);
 	}
-	sort(arr,n);
-	cout<<"\nSorted array by Selection sort is : ";
-	for(int i=0; i<n; i++)
-		cout<<arr[i]<<" ";
-	
+	return 0;
 }

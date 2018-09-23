@@ -1,0 +1,45 @@
+DROP TABLE results;
+CREATE TABLE results (
+	roll		integer PRIMARY KEY,
+	result		varchar(20)
+);
+INSERT INTO results VALUES(1001,'Qualified');
+INSERT INTO results VALUES(1002,'Not qualified');
+
+
+drop table users;
+CREATE TABLE users (
+	login		varchar(10) PRIMARY KEY,
+	password		varchar(10)
+);
+INSERT INTO users VALUES('user1','user1');
+INSERT INTO users VALUES('user2','user2');
+INSERT INTO users VALUES('user3','user3');
+INSERT INTO users VALUES('user4','user4');
+
+drop table info;
+create table info (
+	country 	varchar(50) primary key,
+	population 	varchar(20),
+	percentage	varchar(10),
+	area		varchar(10),
+	populationDensity	integer
+);
+
+insert into info values('India','1,261,580,000','17.15%','3,287,263',353);
+insert into info values('USA','306,161,000','4.52%','3,629,091',31);
+insert into info values('China','1,334,640,000','19.62','9,596,961',360);
+
+
+DROP TABLE employee;
+CREATE TABLE employee (
+	name		varchar(100) PRIMARY KEY,
+	designation	varchar(50),
+	contact		varchar(20)
+);
+
+
+INSERT INTO employee VALUES('John','Lecturer', '9433880334');
+INSERT INTO employee VALUES('Jane','Sr. Lecturer', '9831962261');
+INSERT INTO employee VALUES('Tom','Sr. Lecturer', '9433880334');
+INSERT INTO employee VALUES('Jerry','Professor', '9830613450');

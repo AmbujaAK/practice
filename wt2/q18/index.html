@@ -6,23 +6,25 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<h1> Hello, Ambuja </h1>
-    <hr>
-    <form>
-      <input type="text" id="text" placeholder="Enter roll number" value=""></input>
-      <input type="button" id="btn" onclick="display()" value="Click Me"/>
+		<div style="color:blue">
+			<center >Ambuj Kumar</center>
+			<center >74</center>
+			<center >Web Technology</center><hr>
+		</div>
+    <form method="post" action="/git/servletForm1">
+      	<input type="text" id="text" placeholder="Enter any string" name="input"/>
+      	<input type="button" id="btn" onclick="display()" value="Click Me" name="btn"/>
     </form><br>
-    <form>
-			<b>Department:</b>
-			<select id="dept" onchange="display()">
-      <option value="-1">----select any Department----</option>  
+    <form method="post" action="/git/servletForm2">
+		<b>Department:</b>
+		<select id="dept" onchange="display()" name="dept">
+      		<option value="-1">----select any Department----</option>
 			<option value="0">IT</option>
 			<option value="1">POWER</option>
 			<option value="2">INSTRUMENTATION</option>
 			<option value="3">CONSTRUCTION</option>
-      <option value="4">PRINTING</option>
-			</select>
-			</br>
+      		<option value="4">PRINTING</option>
+		</select><br/>
     </form>
     <hr>
     <div id="content"></div>

@@ -18,8 +18,8 @@ int main(){
     for(int i=0; i<n; i++){
         if(hash[a[i]] == 1){
             flag = true;
-            cout<<a[i]<<endl;
-            break;
+            cout<<a[i]<<" ";
+            //break;
         }
     }
     if(flag == false)

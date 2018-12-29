@@ -13,8 +13,11 @@ int fact(int n){
 int findRankForDup(string s) {
     int n = s.size();
     int t_count = 1;
+
     for(int i=0; i<n; i++) {
         int less_than = 0;
+        
+        // count number of smaller characters than s[i].
         for(int j=i+1; j<n; j++) {
             if(int(s[i]) > int(s[j]))
                 less_than++;

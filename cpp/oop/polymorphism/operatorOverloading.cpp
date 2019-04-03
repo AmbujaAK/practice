@@ -23,9 +23,10 @@ class Test {
 
 int main(){
     Test t;
+    cout<<"\nBefore Overloading : "<<endl;
+    t.print();
     ++t;
-    ++t;
-    --t;
+    cout<<"\nAfter Overloading : "<<endl;
     t.print();
 
     return 0;

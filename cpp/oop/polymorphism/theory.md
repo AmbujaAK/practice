@@ -6,3 +6,11 @@
 
 > Runtime polymorphism
 + method overriding
++ virtual function
+
+.
+.+
+::
+sizeof
+?:
+friend

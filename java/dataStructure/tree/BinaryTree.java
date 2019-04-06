@@ -15,7 +15,7 @@ class BinaryTree {
     /**
      * PreOrder Traversal
      */
-    public static void PreOrder(Node root){
+    public void PreOrder(Node root){
         if(root == null)
             return;
         System.out.print(root.getData() + " ");
@@ -26,7 +26,7 @@ class BinaryTree {
     /**
      * InOrder traversal
      */
-    public static void InOrder(Node root){
+    public void InOrder(Node root){
         if(root == null)
             return;
         InOrder(root.left);
@@ -37,7 +37,7 @@ class BinaryTree {
     /**
      * PostOrder traversal
      */
-    public static void PostOrder(Node root){
+    public void PostOrder(Node root){
         if(root == null)
             return;
         PostOrder(root.left);
@@ -48,7 +48,7 @@ class BinaryTree {
     /**
      * Level Order Insertion
      */
-    public static void insertByLevelOrder(Node root, int data){
+    public void insertByLevelOrder(Node root, int data){
 
         Queue<Node> queue = new LinkedList<Node>();
         queue.add(root);
@@ -76,7 +76,7 @@ class BinaryTree {
     /**
      * Binary Tree Insertion
      */
-    public static Node binaryTreeInsertion(Node root, int data){
+    public Node binaryTreeInsertion(Node root, int data){
         if(root == null)
             return (new Node(data));
         else{

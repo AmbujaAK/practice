@@ -26,5 +26,7 @@ class Solution {
 
         System.out.print("\nPostOrder Traversal :: ");
         tree.PostOrder(tree.root);
+
+        scan.close();
     }
 }

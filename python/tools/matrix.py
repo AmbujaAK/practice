@@ -11,15 +11,17 @@ for row in range(0,s):
     print()
 '''
 # take input as a matrix
-for row in range(0,s):
+x = []
+for i in range(0,s):
     mat = [int(col) for col in input().split()]
-    #print()
+    x.append(mat)
 
+print(x)
 # print matrix in 2-D
 print('\nGiven Matrix is :')
-for row in mat :
-    for col in mat:
-        print(col,end=' ')
+for row in range(len(x)) :
+    for col in range(len(x[row])):
+        print(x[row][col],end=' ')
     print()
 
 #print('Value at index(2,2) is : ',mat[1][1])
